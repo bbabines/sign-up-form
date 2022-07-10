@@ -1,16 +1,15 @@
-* {
-    border: red solid 1px;
-  }
-  
-  body {
+body {
     display: flex;
     background-color: black;
     justify-content: center;
     height: 98vh;
   }
-  
+ 
+
+
+  /* Left side */
   #first-container {
-  width: 20vw;
+  width: 25vw;
   height: 98vh;
   background-image: url("background.avif");
   background-size:auto;
@@ -18,26 +17,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
   }
 
-  /* Need to find a solution for background opacity */
+
   #overlay {
-    /* height: 100%;
-    width: 100%;
-    opacity: 0.3; 
-    background-color: black; */
     display: flex;
     align-items: center;
     width: 100%;
     position: relative;
     bottom: 100px;
-   
-
   }
 
   span {
+    font-family: 'Skranji';
+    background-color: rgb(0, 0, 0, .5);
     width: 100%;
     color: white;
     display: flex;
@@ -45,41 +38,125 @@
     align-items: center;
     justify-content: center;
     font-size: 60px;
-  
-    
+    position:relative;
+    bottom: 90px;
+ 
   }
 
   img {
    height: 100px;
    width: 75px;
-   /* display: flex;
-   justify-content: center; */
   }
-  
+ 
+
+
+
+
+
+  /* Right Side */
   #second-container {
-  width: 50%;
-  height: 98vh;
-  
+  width: 60%;
+  height: 99vh;
   }
-  
+ 
   header {
-    background-color: lightgray;
+    background-color: #E8E8E8;
     height: 33%;
-    width: 70%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 25px;
   }
-  
+ 
   main {
     background-color: white;
     height: 33%;
-    width: 70%;
+    width: 90%;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 20px;
+    padding-top: 1%;
   }
-  
+ 
   footer {
-    background-color: lightgray;
+    background-color: #E8E8E8;
     height: 33%;
-    width: 70%;
+    width: 90%;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
   }
-  
+ 
   #overlay {
     height: 33%;
   }
+
+button {
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  border-radius: 7px;
+  height: 45px;
+  width: 160px;
+  border: none;
+  margin: 30px;
+  margin-left: 0px;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+form {
+font-size: 15px;
+}
+
+label {
+    margin: 3px;
+    color: #3b3939;
+}
+
+
+#form-container {
+    height: 90%;
+    width: 90%; 
+}
+
+.form-left-side {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-left: 0%;
+    margin-top: 1%;
+}
+
+.form-right-side {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid #989898;
+    border-radius: 4px;
+    outline: none;
+    width: 200px;
+    height: 25px;
+}
+
+input:focus {
+border: 2px solid #1E90FF;
+box-shadow: 1px 1px 1px grey;
+}
+
+input:invalid {
+border: 1px solid red;
+}

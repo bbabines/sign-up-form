@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="first-container">
@@ -19,16 +23,48 @@
  
 <div id="second-container">
     <header>
-        Header
+        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
+     Sign up now to get started. <br>
+      <br>
+      You know you want to.
     </header>
 
     <main>
-        Main
+        Let's do this! <br>
+      <div id="form-container">
+           
+        <form action="www.google.com" method="post">
+            <div class="form-left-side"> 
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+        
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" name="email" placeholder="name@email.com">
+        
+                <label for="user_password">Password</label>
+                <input type="password" id="user_password" name="password" required>
+            </div>
+    
+            <div class="form-right-side"> 
+                <label for="lastName">Last Name</label>
+                <input type="text" id="last_name" name="lastName">
+            
+                <label for="phoneNumber">Phone Number</label>
+                <input type="number" id="phone_number" name="phoneNumber" minlength="9" maxlength="9">
+            
+                <label for="confirmUserPassword">Confirm Password</label>
+                <input type="password" id="confirm_user_password" name="confirmUserPassword" required>
+            </div>
+        </form>
+ 
+        </div>
     </main>
 
     <footer>
-        Footer
+        <button type="submit">Create Account</button> <br>
+        Already have an account? <a href="www.google.com" target="_blank">Log in</a>
     </footer>
 </div>
 </body>
+
 </html>
